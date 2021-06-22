@@ -105,8 +105,8 @@ document.addEventListener('DOMContentLoaded', function(){
         /* </one page scroll> */
     }
 
-    /* <slider> */
     if ( $( window ).width() <= 767 ) {
+        /* <slider> */
         new Splide( '.splide', {
             type        : 'loop',
             perPage     : 3,
@@ -130,8 +130,14 @@ document.addEventListener('DOMContentLoaded', function(){
                 }
             }
         } ).mount();
+        /* </slider> */
+
+        let imageHeight = $('.container.s4__img-container').height();
+        console.log( imageHeight );
+        $('#s4').css({
+            'padding-bottom'    : imageHeight + 25 + 'px',
+        });
     }
-    /* </slider> */
 
     /* <burger-menu> */
     let burgerMenu = $('.burger-menu__wrapper');

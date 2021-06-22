@@ -1663,6 +1663,17 @@ h1.main-title{
         padding-bottom: 82px;
     }
 }
+@media screen and (max-width:375px){
+    .s5__item img{
+        height: 160px;
+    }
+    .s9__wrapper{
+        margin-top: 15px;
+    }
+    .s9__img-mobile{
+        max-height: 57vh;
+    }
+}
 @media screen and (max-width:320px){
     .s5__item img {
         height: 120px;
