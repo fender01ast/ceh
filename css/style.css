@@ -1689,7 +1689,7 @@ h1.main-title{
     }
     .s2__img {
         width: 75%;
-        margin: 15px auto 0;
+        margin: 35px auto 0;
     }
     .s3__item{
         font-size: 10px;
@@ -1699,13 +1699,21 @@ h1.main-title{
         margin-top: 15px;
     }
     .s6__img{
-        margin-top: 15px;
+        margin-top: 35px;
     }
     .section{
         height: auto;
         min-height: 100vh;
         max-height: none;
         padding-bottom: 35px;
+    }
+    #s4,
+    #s8,
+    #s9{
+        min-height: 130vh;
+    }
+    .s1__right-col img{
+        max-height: 147px;
     }
 }
 .green-bgc{
