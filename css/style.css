@@ -1701,6 +1701,12 @@ h1.main-title{
     .s6__img{
         margin-top: 15px;
     }
+    .section{
+        height: auto;
+        min-height: 100vh;
+        max-height: none;
+        padding-bottom: 35px;
+    }
 }
 .green-bgc{
     background-color: var(--green-color);
