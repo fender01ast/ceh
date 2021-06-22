@@ -1468,8 +1468,9 @@ h1.main-title{
         margin-right: 8px;
     }
     .s4__container{
-        margin-top: 38px;
+        margin-top: 0px;
         flex-wrap: wrap;
+        padding-bottom: 46px;
     }
     .s4__wrapper{
         width: 100%;
@@ -1497,7 +1498,7 @@ h1.main-title{
     }
     .s4__btn{
         position: absolute;
-        bottom: 0;
+        bottom: 46px;
         left: 50%;
         -webkit-transform: translateY(100%) translateX(-50%);
         -ms-transform: translateY(100%) translateX(-50%);
@@ -1661,6 +1662,10 @@ h1.main-title{
     }
     .s1__container{
         padding-bottom: 82px;
+    }
+    #s4{
+        display: flex;
+        align-items: center;
     }
 }
 @media screen and (max-width:375px){
