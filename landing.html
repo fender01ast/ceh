@@ -7,7 +7,7 @@
     <title>Создание одностраничного сайта</title>
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/style.css?v=1.0.6" />
+    <link rel="stylesheet" href="css/style.css?v=1.0.7" />
 </head>
 <body>
 <header class="header" data-section-name="header">
@@ -46,10 +46,10 @@
         </div>
         <div class="header__right-col">
             <div class="header__contacts-link">
-                <a href="wa.me/+77778877666" class="wa-link">
+                <a href="wa.me/+77778877666" class="wa-link" target="_blank">
                     <img src="images/whatsapp-logo-img.svg" alt="whatsapp-logo-img">
                 </a>
-                <a href="tel:+77778877666" class="phone-link">+ 7 (777) 887-76-66</a>
+                <a href="wa.me/+77778877666" class="phone-link" target="_blank">+ 7 (777) 887-76-66</a>
             </div>
             <div class="lang-switcher">
                 <div class="lang-switcher__displayed">
@@ -76,7 +76,7 @@
         <div id="progress" class="progress"></div>
     </div>
     <nav class="site-pagination"></nav>
-    <a class="individual-solution_wrapper wow fadeInRight" href="#">
+    <a class="individual-solution_wrapper wow fadeInRight" href="https://maxico.kz/">
         <span>Заказать индивидуальное решение</span>
         <img src="images/palette.svg" alt="palette">
     </a>
@@ -423,6 +423,11 @@
     }
     #s1{
         background-image: url(images/main-bg-img_green.jpg);
+    }
+    @media screen and (max-width: 767px) {
+        .s1__right-col{
+            background: none;
+        }
     }
 </style>
 <script src="js/jquery-3.6.0.min.js"></script>

@@ -449,6 +449,9 @@ input{
     text-transform: uppercase;
     color: var(--white-color);
 }
+.s1__sticker-mobile.blue{
+    background-color: var(--blue-color);
+}
 .s1__container{
     display: flex;
     justify-content: flex-start;
@@ -1039,9 +1042,39 @@ h1.main-title{
 .individual-solution_wrapper img{
     margin-left: 23px;
 }
+.s5__title{
+    text-align: center;
+}
+.link-btn{
+    margin: 0 auto;
+}
 @media (min-width: 991px) and (max-width: 1919px) {
     :root{
         --container-width: 90vw;
+    }
+    body{
+        font-size: 18px;
+    }
+    h1.main-title{
+        font-size: 52px;
+        line-height: 58px;
+    }
+    .s2__text{
+        font-size: 17px;
+    }
+    .s6__wrapper p,
+    .s8__wrapper p,
+    .s9__wrapper p{
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .s7__wrapper p{
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .s5__item-content{
+        font-size: 16px;
+        line-height: 28px;
     }
     .s2__img{
         max-width: 55%;
@@ -1093,7 +1126,7 @@ h1.main-title{
         max-width: 49.1447%;
     }
     .s7__img {
-        max-width: 49.2763%;
+        max-width: 44.2763%;
     }
     .s7__wrapper p {
         margin: 15px 0 30px;
@@ -1667,8 +1700,14 @@ h1.main-title{
         display: flex;
         align-items: center;
     }
+    .advantages__item{
+        font-size: 16px;
+    }
 }
 @media screen and (max-width:375px){
+    .advantages__item{
+        font-size: 10px;
+    }
     .s5__item img{
         height: 160px;
     }
