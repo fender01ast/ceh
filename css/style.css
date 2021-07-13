@@ -1045,7 +1045,7 @@ h1.main-title{
 .s5__title{
     text-align: center;
 }
-.link-btn{
+.link-btn.s5__btn{
     margin: 0 auto;
 }
 @media (min-width: 991px) and (max-width: 1919px) {
