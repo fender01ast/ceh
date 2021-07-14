@@ -452,6 +452,9 @@ input{
 .s1__sticker-mobile.blue{
     background-color: var(--blue-color);
 }
+.s1__sticker-mobile.red{
+    background-color: var(--red-color);
+}
 .s1__container{
     display: flex;
     justify-content: flex-start;
