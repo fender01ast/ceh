@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function(){
         /* </one page scroll> */
     }
 
-    if ( $( window ).width() <= 767 ) {
+    if ( $( window ).width() <= 991 ) {
         /* <slider> */
         new Splide( '.splide', {
             type        : 'loop',
@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 },
                 991: {
                     perPage  : 2,
+                    height   : 'auto',
                 }
             }
         } ).mount();
@@ -150,14 +151,37 @@ document.addEventListener('DOMContentLoaded', function(){
     });
     /* </burger-menu> */
 
+    let langArrow = $('.lang-switcher__arrow-img');
     if (document.location.pathname.indexOf('/landing.html') >= 0) {     // если страница === лендинг
+        /* <lang switcher green> */
+        $('.lang-switcher').hover( function(){
+            langArrow.attr('src', 'images/menu-arrow_green.svg');
+        }, function() {
+            langArrow.attr('src', 'images/menu-arrow.svg');
+        });
+        /* <lang switcher green> */
         $('.link-btn,.individual-solution_wrapper').addClass('green-bgc');
         $('.section__title span').addClass('green-color');
         setTimeout(function(){
             $('.site-pagination ul li a').addClass('green-border');
         },200);
+    } else {
+        /* <lang switcher red> */
+        $('.lang-switcher').hover( function(){
+            langArrow.attr('src', 'images/menu-arrow_red.svg');
+        }, function() {
+            langArrow.attr('src', 'images/menu-arrow.svg');
+        });
+        /* <lang switcher red> */
     }
     if (document.location.pathname.indexOf('/corporate.html') >= 0) {   // если страница === корпоративный сайт
+        /* <lang switcher blue> */
+        $('.lang-switcher').hover( function(){
+            langArrow.attr('src', 'images/menu-arrow_blue.svg');
+        }, function() {
+            langArrow.attr('src', 'images/menu-arrow.svg');
+        });
+        /* <lang switcher blue> */
         $('.link-btn,.individual-solution_wrapper').addClass('blue-bgc');
         $('.section__title span').addClass('blue-color');
         setTimeout(function(){
