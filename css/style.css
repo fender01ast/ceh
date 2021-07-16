@@ -882,6 +882,9 @@ h1.main-title{
 .s7__img{
     max-width: 749px;
 }
+.s7__img.mobile{
+    display: none;
+}
 .s8__wrapper{
     max-width: 613px;
     margin-bottom: 90px;
@@ -1754,9 +1757,17 @@ h1.main-title{
         text-align: center;
         margin: 10px 0 15px;
     }
+    .s7__container{
+        flex-direction: column;
+    }
     .s7__img{
         max-width: 100%;
         display: none;
+    }
+    .s7__img.mobile{
+        max-width: 100%;
+        display: block;
+        margin-top: 22px;
     }
     .s7__bg-1,
     .s7__bg-2{
