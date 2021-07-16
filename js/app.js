@@ -142,12 +142,26 @@ document.addEventListener('DOMContentLoaded', function(){
 
     /* <burger-menu> */
     let burgerMenu = $('.burger-menu__wrapper');
+    let burgerClose = $('.burger-menu__close-btn');
     burgerMenu.click(function(){
-        if ( !$(this).hasClass('pressed') ) {
+        /*if ( !$(this).hasClass('pressed') ) {
             $(this).addClass('pressed');
         } else {
             $(this).removeClass('pressed');
-        }
+        }*/
+        $('.header__nav-menu').css({
+            'display':'block',
+            'left':'0%',
+        });
+        $('body').css({'overflow':'hidden'});
+        $.scrollify.disable();
+    });
+    burgerClose.click(function(){
+        $('.header__nav-menu').css({
+            'left':'-100%',
+        });
+        $('body').css({'overflow':'visible'});
+        $.scrollify.enable();
     });
     /* </burger-menu> */
 
