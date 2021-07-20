@@ -26,6 +26,32 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
 
+    /* <modal-window> */
+    let modalWindow = $('#modal__wrapper');
+    let openModalBtn = $('.link-btn');
+    let closeModalBtn = $('.modal__close-btn, .modal__overlay');
+    
+    function closeModal() {
+        //modalWindow.css({'display':'none'});
+        modalWindow.fadeOut();
+        $('body').css({'overflow':'visible'});
+        $.scrollify.enable();
+    }
+    function openModal(e) {
+        e.preventDefault();
+        modalWindow.fadeIn();
+        $.scrollify.disable();
+        $('body').css({'overflow':'hidden'});
+    }
+    /*openModalBtn.click(function(){
+        openModal();
+    });*/
+    openModalBtn.click(openModal);
+    closeModalBtn.click(function(){
+        closeModal();
+    });
+    /* </modal-window> */
+
     /* <toTopBtn> */
     let button = $('.toTopBtn');
     button.fadeOut();
@@ -134,7 +160,6 @@ document.addEventListener('DOMContentLoaded', function(){
         /* </slider> */
 
         let imageHeight = $('.container.s4__img-container').height();
-        console.log( imageHeight );
         $('#s4').css({
             'padding-bottom'    : imageHeight + 25 + 'px',
         });
