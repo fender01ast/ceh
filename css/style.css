@@ -2205,7 +2205,7 @@ h1.main-title{
     .modal__form input[type=tel],
     .modal__form textarea,
     .modal__form input[type=submit]{
-        margin-bottom: 15px;
+        margin-bottom: 0px;
     }
     .modal__disclamer{
         font-size: 12px;

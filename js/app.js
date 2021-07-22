@@ -43,9 +43,7 @@ document.addEventListener('DOMContentLoaded', function(){
         $.scrollify.disable();
         $('body').css({'overflow':'hidden'});
     }
-    /*openModalBtn.click(function(){
-        openModal();
-    });*/
+    
     openModalBtn.click(openModal);
     closeModalBtn.click(function(){
         closeModal();
@@ -169,11 +167,6 @@ document.addEventListener('DOMContentLoaded', function(){
     let burgerMenu = $('.burger-menu__wrapper');
     let burgerClose = $('.burger-menu__close-btn');
     burgerMenu.click(function(){
-        /*if ( !$(this).hasClass('pressed') ) {
-            $(this).addClass('pressed');
-        } else {
-            $(this).removeClass('pressed');
-        }*/
         $('.header__nav-menu').css({
             'display':'block',
             'left':'0%',
