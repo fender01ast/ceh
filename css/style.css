@@ -1218,7 +1218,7 @@ h1.main-title{
     -webkit-appearance: none;
     appearance: none;
     outline: none;
-    margin: 0 0 20px 0;
+    margin: 0 0 0px 0;
     padding: 15px 26px;
     border-radius: 10px;
     border: 1px #D9D9D9 solid;
@@ -1239,6 +1239,8 @@ h1.main-title{
     min-height: 170px;
     max-height: 190px;
     resize: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
 }
 .modal__form input[type=submit]{
     width: 212px;
@@ -1283,6 +1285,72 @@ h1.main-title{
     font-size: 14px;
     line-height: 19px;
     color: var(--text-color);
+}
+.modal__input-wrapper{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.effect-1~.focus-border:before,
+.effect-1~.focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--red-color);
+    transition: 0.3s;
+}
+.effect-1.blue~.focus-border:before,
+.effect-1.blue~.focus-border:after {
+    background-color: var(--blue-color);
+}
+.effect-1.green~.focus-border:before,
+.effect-1.green~.focus-border:after {
+    background-color: var(--green-color);
+}
+.effect-1~.focus-border:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+}
+.effect-1~.focus-border i:before,
+.effect-1~.focus-border i:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: var(--red-color);
+    transition: 0.4s;
+}
+.effect-1.blue~.focus-border i:before,
+.effect-1.blue~.focus-border i:after {
+    background-color: var(--blue-color);
+}
+.effect-1.green~.focus-border i:before,
+.effect-1.green~.focus-border i:after {
+    background-color: var(--green-color);
+}
+.effect-1~.focus-border i:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
+.effect-1:focus~.focus-border:before,
+.effect-1:focus~.focus-border:after {
+    width: 100%;
+    transition: 0.3s;
+}
+.effect-1:focus~.focus-border i:before,
+.effect-1:focus~.focus-border i:after {
+    height: 100%;
+    transition: 0.4s;
 }
 /* </modal-window styles> */
 
@@ -1665,7 +1733,7 @@ h1.main-title{
     .header__nav-menu ul{
         flex-direction: column;
         width: 100%;
-        max-height: calc(100% - 109px);
+        max-height: calc(100% - 109px - 60px);
         overflow-y: scroll;
         padding-bottom: 60px;
         padding-left: 16px;
@@ -1683,6 +1751,37 @@ h1.main-title{
     .header__nav-menu ul li:not(:last-child){
         margin-right: 0px;
         margin-bottom: 30px;
+    }
+    .nav-menu__dropdown:hover{
+        width: 100%;
+        padding-right: 0;
+    }
+    .nav-menu__dropdown:before{
+        transition: none;
+    }
+    .nav-menu__dropdown:hover:before{
+        /*display: none;*/
+        top: 13px;
+        right: auto;
+        left: calc(3px + 67.66px);
+    }
+    .nav-menu__dropdown-child{
+        display: none;
+        position: relative;
+        min-width: auto;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0px;
+        height: auto;
+        overflow: hidden;
+        /*transition: all .3s linear;*/
+        padding: 0;
+    }
+    /*.nav-menu__dropdown:hover .nav-menu__dropdown-child{
+        width: 100%;
+    }*/
+    .nav-menu__dropdown:hover .nav-menu__btn{
+        margin-bottom: 15px;
     }
     .s1__sticker{
         display: none;
@@ -1957,7 +2056,7 @@ h1.main-title{
         display: none;
     }
     .s7__img.mobile{
-        max-width: 100%;
+        max-width: 50%;
         display: block;
         margin-top: 22px;
     }
@@ -1980,7 +2079,7 @@ h1.main-title{
     .s8__wrapper {
         max-width: 100%;
         margin-bottom: 0;
-        margin-top: 44px;
+        margin-top: 75px;
     }
     #s8 {
         align-items: flex-start;
@@ -1994,7 +2093,7 @@ h1.main-title{
     }
     .s9__wrapper {
         margin-bottom: 0;
-        margin-top: 40px;
+        margin-top: 75px;
     }
     .s9__img-mobile{
         display: block;
@@ -2211,3 +2310,39 @@ h1.main-title{
 .s3__item.grey:hover .s3__white-img{
     display: none;
 }
+/* 1792x828px at 326ppi iPhone 11 and iPhone XR */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) {
+        .s9__wrapper{
+            margin-top: 80px;
+        }
+        .s4__container{
+            margin-bottom: 75px;
+        }
+    }
+/* 2778x1284 pixels at 458ppi iPhone 12 Pro Max */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        .s9__wrapper{
+            margin-top: 80px;
+        }
+    }
+/* 2340x1080 pixels at 476ppi iPhone 12 Mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        /*#s8{
+            align-items: center;
+        }*/
+        .s8__wrapper{
+            margin-top: 80px;
+        }
+        .s9__wrapper{
+            margin-top: 80px;
+        }
+    }

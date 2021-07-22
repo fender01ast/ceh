@@ -9,7 +9,7 @@
     <link href="images/webclip.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/style.css?v=1.0.12" />
+    <link rel="stylesheet" href="css/style.css?v=1.1.2" />
 </head>
 <body>
 <header class="header" data-section-name="header">
@@ -101,10 +101,25 @@
             <div class="modal__content">
                 <span class="modal__close-btn">&times;</span>
                 <h3 class="modal__title">Обратная <span>связь</span></h3>
-                <form action="#" class="modal__form">
-                    <input type="text" name="user-name" id="user-name" placeholder="Ваше имя">
-                    <input type="tel" name="user-tel" id="user-tel" placeholder="Ваш телефон">
-                    <textarea name="user-text" id="user-text" placeholder="Сообщение"></textarea>
+                <form action="#" class="modal__form" method="POST">
+                    <div class="modal__input-wrapper">
+                        <input type="text" name="user-name" id="user-name" placeholder="Ваше имя" class="effect-1">
+                        <span class="focus-border">
+                            <i></i>
+                        </span>
+                    </div>
+                    <div class="modal__input-wrapper">
+                        <input type="tel" name="user-tel" id="user-tel" placeholder="Ваш телефон" class="effect-1">
+                        <span class="focus-border">
+                            <i></i>
+                        </span>
+                    </div>
+                    <div class="modal__input-wrapper">
+                        <textarea name="user-text" id="user-text" placeholder="Сообщение" class="effect-1"></textarea>
+                        <span class="focus-border">
+                            <i></i>
+                        </span>
+                    </div>
                     <input type="submit" value="Заказать сайт">
                     <p class="modal__disclamer">Нажимая кнопку “отправить” вы соглашаетесь с обработкой ваших персональных данных сайтом</p>
                 </form>
@@ -429,6 +444,6 @@
 <script src="js/jquery.scrollify.min.js"></script>
 <script src="js/splide.min.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/app.js?ver=1.0.12"></script>
+<script src="js/app.js?ver=1.1.2"></script>
 </body>
 </html>
