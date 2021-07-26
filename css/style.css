@@ -510,7 +510,7 @@ input{
 .s1__container{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
 }
 .s1__left-col,
@@ -917,6 +917,7 @@ h1.main-title{
     position: absolute;
     bottom: 0;
     right: 0;
+    max-width: var(--container-width);
 }
 .s9__bg-2{
     position: absolute;
@@ -1440,8 +1441,11 @@ h1.main-title{
     /*.s7__container picture{
         max-width: 44.2763%;
     }*/
-    .s7__img {
+    picture.s7__img-picture{
         max-width: 44.2763%;
+    }
+    .s7__img {
+        max-width: 100%;
     }
     .s7__wrapper p {
         margin: 15px 0 30px;
@@ -1530,8 +1534,11 @@ h1.main-title{
     /*.s7__container picture{
         max-width: 45.2763%;
     }*/
-    .s7__img {
+    picture.s7__img-picture{
         max-width: 45.2763%;
+    }
+    .s7__img {
+        max-width: 100%;
     }
     .s9__img {
         max-width: 68.5vw;

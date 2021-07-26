@@ -9,7 +9,7 @@
     <link href="images/webclip.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/style.css?v=1.1.4" />
+    <link rel="stylesheet" href="css/style.css?v=1.1.5" />
 </head>
 <body>
 <header class="header" data-section-name="header">
@@ -128,7 +128,7 @@
     </div>
 </header>
 <main>
-    <section id="s1" class="section" data-section-name="1">
+    <section id="s1" class="section" data-section-name="1" style="background-image: url('images/main-bg-img.webp')" data-bg="images/main-bg-img.jpg" data-bg-webp="images/main-bg-img.webp">
         <img src="images/sticker_red.svg" alt="Готовые сайты для малого бизнеса" class="s1__sticker">
         <div class="s1__sticker-mobile red">Готовые сайты для малого бизнеса</div>
         <div class="container s1__container">
@@ -165,7 +165,7 @@
             </a>
         </div>
     </section>
-    <section id="s2" class="section" data-section-name="2">
+    <section id="s2" class="section" data-section-name="2" style="background-image: url('images/s2_background.webp')" data-bg="images/s2_background.jpg" data-bg-webp="images/s2_background.webp">
         <div class="container s2__container">
             <div class="s2__wrapper">
                 <h2 class="s2__title section__title wow fadeInLeft">Разработка <span class="s2__span">интернет-магазина</span></h2>
@@ -261,7 +261,7 @@
         <img src="images/s3_bg-1.svg" alt="s3_bg-1" class="s3__bg-1">
         <img src="images/s3_bg-2.svg" alt="s3_bg-2" class="s3__bg-2">
     </section>
-    <section id="s4" class="section" data-section-name="4">
+    <section id="s4" class="section" data-section-name="4" style="background-image: url('images/s4_background.webp')" data-bg="images/s4_background.jpg" data-bg-webp="images/s4_background.webp">
         <div class="container s4__container">
             <div class="s4__wrapper">
                 <h2 class="s4__title section__title wow fadeInLeft"><span>Адаптивный</span> сайт</h2>
@@ -362,7 +362,7 @@
         <img src="images/s5_bg-1.svg" alt="s5_bg-1" class="s5__bg-1">
         <img src="images/s5_bg-2.svg" alt="s5_bg-2" class="s5__bg-2">
     </section>
-    <section id="s6" class="section" data-section-name="6">
+    <section id="s6" class="section" data-section-name="6" style="background-image: url('images/s6__background-img.webp')" data-bg="images/s6__background-img.jpg" data-bg-webp="images/s6__background-img.webp">
         <div class="container s6__container">
             <!--<img src="images/s6__img.png" alt="s6__img" class="s6__img wow fadeInLeft">-->
             <picture>
@@ -385,7 +385,11 @@
                 <h2 class="s7__title section__title">Безопасные <span class="s2__span">Решения</span></h2>
                 <p>Эффективный способ защиты информации, предназначенное для восстановления в оригинальном или новом месте их расположения в случае потерь, повреждения или разрушения данных</p>
             </div>
-            <img src="images/s7__img.png" alt="s7__img" class="s7__img wow fadeInRight">
+            <!--<img src="images/s7__img.png" alt="s7__img" class="s7__img wow fadeInRight">-->
+            <picture class="s7__img-picture">
+                <source srcset="images/s7__img.webp" type="image/webp" class="s7__img wow fadeInRight">
+                <img src="images/s7__img.png" alt="s7__img" class="s7__img wow fadeInRight">
+            </picture>
             <!--<img src="images/s7__img-mobile.png" alt="s7__img-mobile" class="s7__img mobile wow fadeInRight">-->
             <picture>
                 <source srcset="images/s7__img-mobile.webp" type="image/webp" class="s7__img mobile wow fadeInRight">
@@ -395,7 +399,7 @@
         <img src="images/s7__bg-1.svg" alt="s7__bg-1" class="s7__bg-1">
         <img src="images/s7__bg-2.svg" alt="s7__bg-2" class="s7__bg-2">
     </section>
-    <section id="s8" class="section" data-section-name="8">
+    <section id="s8" class="section" data-section-name="8" style="background-image: url('images/s8__background-img.webp')" data-bg="images/s8__background-img.jpg" data-bg-webp="images/s8__background-img.webp">
         <div class="container s8__container">
             <div class="s8__wrapper wow fadeInLeft">
                 <h2 class="s8__title section__title">SEO <span>оптимизация</span></h2>
@@ -481,6 +485,6 @@
 <script src="js/jquery.scrollify.min.js"></script>
 <script src="js/splide.min.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/app.js?ver=1.1.4"></script>
+<script src="js/app.js?ver=1.1.5"></script>
 </body>
 </html>
