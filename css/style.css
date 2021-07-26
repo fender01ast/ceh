@@ -2153,12 +2153,12 @@ h1.main-title{
     .footer__middle-col a img{
         width: 100%;
     }
-    .footer__middle-col a:nth-child(2), .footer__middle-col a:nth-child(3) {
+    /*.footer__middle-col a:nth-child(2), .footer__middle-col a:nth-child(3) {
         margin-left: 0px;
     }
     .footer__middle-col a:nth-child(3) {
         margin-right: 0px;
-    }
+    }*/
     .footer__right-col{
         left: 0;
         width: 100%;
