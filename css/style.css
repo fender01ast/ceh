@@ -891,6 +891,9 @@ h1.main-title{
 .s7__img{
     max-width: 749px;
 }
+.s7__img-picture__mobile{
+    display: none;
+}
 .s7__img.mobile{
     display: none;
 }
@@ -2078,6 +2081,9 @@ h1.main-title{
     .s7__img{
         max-width: 100%;
         display: none;
+    }
+    .s7__img-picture__mobile{
+        display: block;
     }
     .s7__img.mobile{
         max-width: 100%;
