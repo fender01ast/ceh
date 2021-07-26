@@ -1386,7 +1386,7 @@ h1.main-title{
         line-height: 28px;
     }
     .s2__img{
-        max-width: 55%;
+        max-width: 100%;
         right: -20px;
     }
     .s4__tab-img {
@@ -1431,9 +1431,15 @@ h1.main-title{
     .s5__wrapper {
         margin: 25px 0 5px;
     }
-    .s6__img {
+    .s6__container picture{
         max-width: 49.1447%;
     }
+    .s6__img {
+        max-width: 100%;
+    }
+    /*.s7__container picture{
+        max-width: 44.2763%;
+    }*/
     .s7__img {
         max-width: 44.2763%;
     }
@@ -1521,6 +1527,9 @@ h1.main-title{
         line-height: 26px;
         margin: 20px 0;
     }
+    /*.s7__container picture{
+        max-width: 45.2763%;
+    }*/
     .s7__img {
         max-width: 45.2763%;
     }
@@ -1792,7 +1801,8 @@ h1.main-title{
     }
     .s1__right-col img {
         /*max-width: 36.25vw;*/
-        max-width: 40.25%;
+        /*max-width: 40.25%;*/
+        max-width: 100%;
         max-height: 190px;
     }
     h1.main-title {
@@ -2032,10 +2042,14 @@ h1.main-title{
     .s6__container{
         flex-wrap: wrap;
     }
+    .s6__container picture{
+        max-width: 100%;
+        order: 3;
+    }
     .s6__img{
         max-width: 100%;
         width: 100%;
-        order: 3;
+        /*order: 3;*/
         margin-top: 27px;
     }
     .s6__wrapper{
@@ -2051,12 +2065,15 @@ h1.main-title{
     .s7__container{
         flex-direction: column;
     }
+    .s7__container picture{
+        max-width: 50%;
+    }
     .s7__img{
         max-width: 100%;
         display: none;
     }
     .s7__img.mobile{
-        max-width: 50%;
+        max-width: 100%;
         display: block;
         margin-top: 22px;
     }

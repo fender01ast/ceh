@@ -9,7 +9,7 @@
     <link href="images/webclip.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/style.css?v=1.1.3" />
+    <link rel="stylesheet" href="css/style.css?v=1.1.4" />
 </head>
 <body>
 <header class="header" data-section-name="header">
@@ -154,8 +154,9 @@
             <div class="s1__right-col wow fadeInRight">
                 <!--<img src="images/Одностраничный-сайт.png" alt="Одностраничный-сайт">-->
                 <picture>
-                    <source media="(max-width: 767px)" srcset="images/Одностраничный-сайт.webp" type="image/webp">
-                    <img src="images/Одностраничный-сайт.png" alt="Одностраничный-сайт" style="max-width: 100%;">
+                    <!--<source media="(max-width: 767px)" srcset="images/Одностраничный-сайт.webp" type="image/webp">-->
+                    <source media="(max-width: 480px)" srcset="images/Одностраничный-сайт-480w.webp" type="image/webp">
+                    <img src="images/Одностраничный-сайт.png" alt="Одностраничный-сайт">
                 </picture>
             </div>
             <a href="#s2" class="s1__bottom-link wow fadeInUp">
@@ -274,7 +275,11 @@
                 <source media="(max-width: 767px)" srcset="images/s4_browser-img-480w.webp" class="s4__tab-img" type="image/webp">
                 <img src="images/s4_browser-img.png" alt="s4_browser-img" class="s4__tab-img">
             </picture>
-            <img src="images/s4_smartphone-img.png" alt="s4_smartphone-img" class="s4__phone-img">
+            <!--<img src="images/s4_smartphone-img.png" alt="s4_smartphone-img" class="s4__phone-img">-->
+            <picture>
+                <source srcset="images/s4_smartphone-img.webp" type="image/webp" class="s4__phone-img">
+                <img src="images/s4_smartphone-img.png" alt="s4_smartphone-img" class="s4__phone-img">
+            </picture>
         </div>
     </section>
     <section id="s5" class="section" data-section-name="5">
@@ -359,7 +364,11 @@
     </section>
     <section id="s6" class="section" data-section-name="6">
         <div class="container s6__container">
-            <img src="images/s6__img.png" alt="s6__img" class="s6__img wow fadeInLeft">
+            <!--<img src="images/s6__img.png" alt="s6__img" class="s6__img wow fadeInLeft">-->
+            <picture>
+                <source srcset="images/s6__img.webp" type="image/webp" class="s6__img wow fadeInLeft">
+                <img src="images/s6__img.png" alt="s6__img" class="s6__img wow fadeInLeft">
+            </picture>
             <div class="s6__wrapper">
                 <h2 class="s6__title section__title wow fadeInRight">Современный <span>дизайн</span></h2>
                 <p class="wow fadeInRight">Будет подобран проверенный дизайн с учётом удобства для пользователей, для увеличения продаж и узнаваемости бренда<br>Будет подобран проверенный дизайн с учётом удобства для пользователей, для увеличения продаж и узнаваемости бренда</p>
@@ -377,7 +386,11 @@
                 <p>Эффективный способ защиты информации, предназначенное для восстановления в оригинальном или новом месте их расположения в случае потерь, повреждения или разрушения данных</p>
             </div>
             <img src="images/s7__img.png" alt="s7__img" class="s7__img wow fadeInRight">
-            <img src="images/s7__img-mobile.png" alt="s7__img-mobile" class="s7__img mobile wow fadeInRight">
+            <!--<img src="images/s7__img-mobile.png" alt="s7__img-mobile" class="s7__img mobile wow fadeInRight">-->
+            <picture>
+                <source srcset="images/s7__img-mobile.webp" type="image/webp" class="s7__img mobile wow fadeInRight">
+                <img src="images/s7__img-mobile.png" alt="s7__img-mobile" class="s7__img mobile wow fadeInRight">
+            </picture>
         </div>
         <img src="images/s7__bg-1.svg" alt="s7__bg-1" class="s7__bg-1">
         <img src="images/s7__bg-2.svg" alt="s7__bg-2" class="s7__bg-2">
@@ -404,11 +417,19 @@
                 <a href="" class="link-btn s8__btn">Заказать сайт</a>
             </div>
         </div>
-        <img src="images/s9__img.png" alt="s9__img" class="s9__img">
+        <!--<img src="images/s9__img.png" alt="s9__img" class="s9__img">-->
+        <picture>
+            <source srcset="images/s9__img.webp" type="image/webp" class="s9__img">
+            <img src="images/s9__img.png" alt="s9__img" class="s9__img">
+        </picture>
         <img src="images/s9__bg-1.svg" alt="s9__bg-1" class="s9__bg-1">
         <img src="images/s9__bg-2.svg" alt="s9__bg-2" class="s9__bg-2">
         <img src="images/s9__bg-3.svg" alt="s9__bg-3" class="s9__bg-3">
-        <img src="images/s9__img-mobile.png" alt="s9__img-mobile" class="s9__img-mobile">
+        <!--<img src="images/s9__img-mobile.png" alt="s9__img-mobile" class="s9__img-mobile">-->
+        <picture>
+            <source srcset="images/s9__img-mobile.webp" type="image/webp" class="s9__img-mobile">
+            <img src="images/s9__img-mobile.png" alt="s9__img-mobile" class="s9__img-mobile">
+        </picture>
     </section>
 </main>
 <footer class="footer" data-section-name="footer">
@@ -460,6 +481,6 @@
 <script src="js/jquery.scrollify.min.js"></script>
 <script src="js/splide.min.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/app.js?ver=1.1.3"></script>
+<script src="js/app.js?ver=1.1.4"></script>
 </body>
 </html>
