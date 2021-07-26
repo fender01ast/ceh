@@ -9,6 +9,38 @@
     <link href="images/webclip.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
+    <style>
+        :root {
+            --header-height: 57px;
+        }
+        .section{
+            position: relative;
+            height: 100vh;
+            min-height: 100vh;
+            padding-top: var(--header-height);
+        }
+        @media screen and (max-width: 991px){
+            :root{
+                --header-height: 48px;
+            }
+            .section{
+                padding-top: var(--header-height);
+            }
+            .s4_smartphone-img__picture{
+                display: none;
+            }
+        }
+        @media screen and (max-width:320px) {
+            .section{
+                height: auto;
+                min-height: 100vh;
+                max-height: none;
+                padding-bottom: 35px;
+            }
+        }
+    </style>
+    <link rel="preload" href="css/style.css?v=1.1.6" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css?v=1.1.7" /></noscript>
 </head>
 <body>
 <header class="header" data-section-name="header">
@@ -275,7 +307,7 @@
                 <img src="images/s4_browser-img.png" alt="s4_browser-img" class="s4__tab-img">
             </picture>
             <!--<img src="images/s4_smartphone-img.png" alt="s4_smartphone-img" class="s4__phone-img">-->
-            <picture>
+            <picture class="s4_smartphone-img__picture">
                 <source srcset="images/s4_smartphone-img.webp" type="image/webp" class="s4__phone-img">
                 <img src="images/s4_smartphone-img.png" alt="s4_smartphone-img" class="s4__phone-img">
             </picture>
@@ -480,11 +512,10 @@
         <a href="#">maxico.kz @ <span id="year-now">2021</span></a>
     </h4>
 </footer>
-<link rel="stylesheet" href="css/style.css?v=1.1.6" />
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/jquery.scrollify.min.js"></script>
 <script src="js/splide.min.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/app.js?ver=1.1.6"></script>
+<script src="js/app.js?ver=1.1.7"></script>
 </body>
 </html>
