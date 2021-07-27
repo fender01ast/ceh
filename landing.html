@@ -9,7 +9,7 @@
     <link href="images/webclip.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/style.css?v=1.1.9" />
+    <link rel="stylesheet" href="css/style.min.css?v=1.1.10" />
 </head>
 <body>
 <header class="header" data-section-name="header">
@@ -152,7 +152,11 @@
                 </div>
             </div>
             <div class="s1__right-col wow fadeInRight">
-                <img src="images/Одностраничный-сайт_green.png" alt="Одностраничный-сайт">
+                <!--<img src="images/Одностраничный-сайт_green.png" alt="Одностраничный-сайт">-->
+                <picture>
+                    <source media="(max-width: 480px)" srcset="images/Одностраничный-сайт_green-480w.webp" type="image/webp">
+                    <img src="images/Одностраничный-сайт_green.png" alt="Одностраничный-сайт">
+                </picture>
             </div>
             <a href="#s2" class="s1__bottom-link wow fadeInUp">
                 <img src="images/arrow-down.svg" alt="arrow-down">
@@ -173,7 +177,11 @@
                     <span>Что включено?</span>
                 </a>
             </div>
-            <img src="images/notebook-s2_green.png" alt="notebook-s2" class="s2__img wow fadeInRight">
+            <!--<img src="images/notebook-s2_green.png" alt="notebook-s2" class="s2__img wow fadeInRight">-->
+            <picture>
+                <source media="(max-width: 767px)" srcset="images/notebook-s2_green.webp" type="image/webp" class="s2__img wow fadeInRight">
+                <img src="images/notebook-s2_green.png" alt="notebook-s2" class="s2__img wow fadeInRight">
+            </picture>
         </div>
     </section>
     <section id="s3" class="section" data-section-name="3">
@@ -261,8 +269,16 @@
             <p class="s4__text wow fadeInRight">Большинство пользователей технологии 21 века предпочитают получать информацию быстро, именно поэтому инструментами для переходов на сайт являются не только компьютеры, но и телефоны, планшеты. В данном случае адаптивный сайт позволит комфортно находиться на сайте с любого инструмента подстраиваясь под разрешения экранов</p>
         </div>
         <div class="container s4__img-container wow fadeInRight">
-            <img src="images/s4_browser-img.png" alt="s4_browser-img" class="s4__tab-img">
-            <img src="images/s4_smartphone-img.png" alt="s4_smartphone-img" class="s4__phone-img">
+            <!--<img src="images/s4_browser-img.png" alt="s4_browser-img" class="s4__tab-img">-->
+            <picture>
+                <source media="(max-width: 767px)" srcset="images/s4_browser-img-480w.webp" class="s4__tab-img" type="image/webp">
+                <img src="images/s4_browser-img.png" alt="s4_browser-img" class="s4__tab-img">
+            </picture>
+            <!--<img src="images/s4_smartphone-img.png" alt="s4_smartphone-img" class="s4__phone-img">-->
+            <picture class="s4_smartphone-img__picture">
+                <source srcset="images/s4_smartphone-img.webp" type="image/webp" class="s4__phone-img">
+                <img src="images/s4_smartphone-img.png" alt="s4_smartphone-img" class="s4__phone-img">
+            </picture>
         </div>
     </section>
     <section id="s5" class="section" data-section-name="5">
@@ -347,7 +363,11 @@
     </section>
     <section id="s6" class="section" data-section-name="6">
         <div class="container s6__container">
-            <img src="images/s6__img.png" alt="s6__img" class="s6__img wow fadeInLeft">
+            <!--<img src="images/s6__img.png" alt="s6__img" class="s6__img wow fadeInLeft">-->
+            <picture>
+                <source srcset="images/s6__img.webp" type="image/webp" class="s6__img wow fadeInLeft">
+                <img src="images/s6__img.png" alt="s6__img" class="s6__img wow fadeInLeft">
+            </picture>
             <div class="s6__wrapper">
                 <h2 class="s6__title section__title wow fadeInRight">Современный <span>дизайн</span></h2>
                 <p class="wow fadeInRight">Будет подобран проверенный дизайн с учётом удобства для пользователей, для увеличения продаж и узнаваемости бренда<br>Будет подобран проверенный дизайн с учётом удобства для пользователей, для увеличения продаж и узнаваемости бренда</p>
@@ -364,8 +384,16 @@
                 <h2 class="s7__title section__title">Безопасные <span class="s2__span">Решения</span></h2>
                 <p>Эффективный способ защиты информации, предназначенное для восстановления в оригинальном или новом месте их расположения в случае потерь, повреждения или разрушения данных</p>
             </div>
-            <img src="images/s7__img.png" alt="s7__img" class="s7__img wow fadeInRight">
-            <img src="images/s7__img-mobile.png" alt="s7__img-mobile" class="s7__img mobile wow fadeInRight">
+            <!--<img src="images/s7__img.png" alt="s7__img" class="s7__img wow fadeInRight">-->
+            <picture class="s7__img-picture">
+                <source srcset="images/s7__img.webp" type="image/webp" class="s7__img wow fadeInRight">
+                <img src="images/s7__img.png" alt="s7__img" class="s7__img wow fadeInRight">
+            </picture>
+            <!--<img src="images/s7__img-mobile.png" alt="s7__img-mobile" class="s7__img mobile wow fadeInRight">-->
+            <picture class="s7__img-picture__mobile">
+                <source srcset="images/s7__img-mobile.webp" type="image/webp" class="s7__img mobile wow fadeInRight">
+                <img src="images/s7__img-mobile.png" alt="s7__img-mobile" class="s7__img mobile wow fadeInRight">
+            </picture>
         </div>
         <img src="images/s7__bg-1.svg" alt="s7__bg-1" class="s7__bg-1">
         <img src="images/s7__bg-2.svg" alt="s7__bg-2" class="s7__bg-2">
@@ -378,7 +406,11 @@
                 <a href="" class="link-btn s8__btn">Заказать сайт</a>
             </div>
         </div>
-        <img src="images/s8__img.png" alt="s8__img" class="s8__img">
+        <!--<img src="images/s8__img.png" alt="s8__img" class="s8__img">-->
+        <picture>
+            <source media="(max-width: 767px)" srcset="images/s8__img.webp" class="s8__img" type="image/webp">
+            <img src="images/s8__img.png" alt="s8__img" class="s8__img">
+        </picture>
     </section>
     <!--<section id="s9" class="section" data-section-name="9">
         <div class="container s9__container">
@@ -480,6 +512,6 @@
 <script src="js/jquery.scrollify.min.js"></script>
 <script src="js/splide.min.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/app.js?ver=1.1.9"></script>
+<script src="js/app.js?ver=1.1.10"></script>
 </body>
 </html>
