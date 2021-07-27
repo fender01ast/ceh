@@ -1523,8 +1523,11 @@ h1.main-title{
     .s5__item{
         min-height: 160px;
     }
-    .s5__item img {
+    .s5_picture-desktop{
         width: 31.6773%;
+    }
+    .s5__item img {
+        width: 100%;
         height: auto;
     }
     .s6__wrapper p,
