@@ -199,6 +199,10 @@ document.addEventListener('DOMContentLoaded', function(){
         input.addEventListener("focus", mask, false);
         input.addEventListener("blur", mask, false);
     /* </tel mask> */
+
+    $('.s3__item').click(function(e){
+        e.preventDefault();
+    });
 });
 
 
