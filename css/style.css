@@ -1295,6 +1295,7 @@ h1.main-title{
     position: relative;
     margin-bottom: 20px;
     border-radius: 10px;
+    max-height: 170px;
 }
 .effect-1~.focus-border:before,
 .effect-1~.focus-border:after {
@@ -1357,7 +1358,12 @@ h1.main-title{
     transition: 0.4s;
 }
 /* </modal-window styles> */
-
+.footer__left-col-links a img{
+    width: 25px;
+}
+.footer__middle-col a img{
+    width: 80px;
+}
 @media (min-width: 992px) and (max-width: 1919px) {
     :root{
         --container-width: 90vw;
