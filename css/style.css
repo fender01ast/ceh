@@ -1156,6 +1156,7 @@ h1.main-title{
     height: auto;
     padding: 55px 50px 60px;
     z-index: 2;
+    justify-content: center;
 }
 .modal__content:before{
     content: '';

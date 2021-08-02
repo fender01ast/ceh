@@ -9,7 +9,7 @@
     <link href="images/webclip.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/style.min.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/style.min.css?v=1.2.2" />
 </head>
 <body>
 <header class="header" data-section-name="header">
@@ -65,18 +65,18 @@
             </div>
             <div class="lang-switcher">
                 <div class="lang-switcher__displayed">
-                    <a class="lang-switcher__item" href="#">
+                    <a class="lang-switcher__item" href="">
                         <img src="images/ru-flag.svg" alt="ru-flag">
                         <span class="green">RU</span>
                     </a>
                 </div>
                 <img src="images/menu-arrow.svg" alt="menu-arrow" class="lang-switcher__arrow-img">
                 <div class="lang-switcher__hidden-content">
-                    <a class="lang-switcher__item" href="#">
+                    <a class="lang-switcher__item" href="">
                         <img src="images/kz-flag.svg" alt="kz-flag">
                         <span class="green">KZ</span>
                     </a>
-                    <a class="lang-switcher__item" href="#">
+                    <a class="lang-switcher__item" href="">
                         <img src="images/us-flag.svg" alt="en-flag">
                         <span class="green">EN</span>
                     </a>
@@ -101,7 +101,21 @@
             <div class="modal__content green">
                 <span class="modal__close-btn">&times;</span>
                 <h3 class="modal__title">Обратная <span class="green">связь</span></h3>
-                <form action="#" class="modal__form" method="POST">
+                <script id="bx24_form_inline" data-skip-moving="true">
+                    document.addEventListener('DOMContentLoaded', function(){
+                        setTimeout(function() {
+                            (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+                                (w[b].forms=w[b].forms||[]).push(arguments[0])};
+                                if(w[b]['forms']) return;
+                                var s=d.createElement('script');s.async=1;s.src=u+'?'+(1*new Date());
+                                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                            })(window,document,'https://maxico.bitrix24.kz/bitrix/js/crm/form_loader.js','b24form');
+
+                            b24form({"id":"6","lang":"ru","sec":"f9ubqr","type":"inline", "node": document.getElementById('bitrix-form-1')});
+                        }, 1000);
+                    });
+                </script>
+                <!--<form action="#" class="modal__form" method="POST">
                     <div class="modal__input-wrapper">
                         <input type="text" name="user-name" id="user-name" placeholder="Ваше имя" class="effect-1 green">
                         <span class="focus-border">
@@ -122,7 +136,7 @@
                     </div>
                     <input type="submit" value="Заказать сайт" class="green">
                     <p class="modal__disclamer">Нажимая кнопку “отправить” вы соглашаетесь с обработкой ваших персональных данных сайтом</p>
-                </form>
+                </form>-->
             </div>
         </div>
     </div>
@@ -547,6 +561,6 @@
 <script src="js/jquery.scrollify.min.js"></script>
 <script src="js/splide.min.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/app.js?ver=1.2.1"></script>
+<script src="js/app.js?ver=1.2.2"></script>
 </body>
 </html>
