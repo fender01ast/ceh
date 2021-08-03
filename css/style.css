@@ -566,6 +566,10 @@ input{
     z-index: 1;
     margin: 96px auto 0;
 }
+.s1__bottom-link:hover,
+.s2__bottom-link:hover{
+    transform: translateY(8px);
+}
 .s1__bottom-link span,
 .s2__bottom-link span{
     margin-left: 20px;
@@ -626,6 +630,13 @@ h1.main-title{
     margin-top: 43px;
     width: auto;
     justify-content: flex-start;
+}
+#vanta-animation1{
+    position: absolute;
+    top: 57px;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .s2__price{
     font-weight: bold;
@@ -1365,6 +1376,9 @@ h1.main-title{
 .footer__middle-col a img{
     width: 80px;
 }
+.s8__img.mobile{
+    display: none;
+}
 @media (min-width: 992px) and (max-width: 1919px) {
     :root{
         --container-width: 90vw;
@@ -1665,6 +1679,9 @@ h1.main-title{
     :root{
         --container-width: 89.44vw;
         --header-height: 48px;
+    }
+    #vanta-animation1{
+        top: 48px;
     }
     .lang-switcher__hidden-content{
         left: auto;
@@ -2225,6 +2242,13 @@ h1.main-title{
         min-height: 140px;
     }
     /* </modal-window-mobile> */
+    .s8__img{
+        display: none;
+    }
+    .s8__img.mobile{
+        display: block;
+        width: 100%;
+    }
 }
 @media screen and (max-width:375px){
     .advantages__item{
@@ -2356,10 +2380,13 @@ h1.main-title{
     and (device-height: 896px) 
     and (-webkit-device-pixel-ratio: 2) {
         .s9__wrapper{
-            margin-top: 80px;
+            margin-top: 90px;
         }
         .s4__container{
             margin-bottom: 75px;
+        }
+        .s8__wrapper{
+            margin-top: 140px;
         }
     }
 /* 2778x1284 pixels at 458ppi iPhone 12 Pro Max */
@@ -2368,7 +2395,10 @@ h1.main-title{
     and (device-height: 926px) 
     and (-webkit-device-pixel-ratio: 3) {
         .s9__wrapper{
-            margin-top: 80px;
+            margin-top: 90px;
+        }
+        .s8__wrapper{
+            margin-top: 140px;
         }
     }
 /* 2340x1080 pixels at 476ppi iPhone 12 Mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
@@ -2380,9 +2410,9 @@ h1.main-title{
             align-items: center;
         }*/
         .s8__wrapper{
-            margin-top: 80px;
+            margin-top: 140px;
         }
         .s9__wrapper{
-            margin-top: 80px;
+            margin-top: 90px;
         }
     }

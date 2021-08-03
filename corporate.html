@@ -9,7 +9,7 @@
     <link href="images/webclip.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/style.min.css?v=1.2.2" />
+    <link rel="stylesheet" href="css/style.min.css?v=1.2.3" />
 </head>
 <body>
 <header class="header" data-section-name="header">
@@ -167,8 +167,12 @@
             </div>
             <div class="s1__right-col wow fadeInRight">
                 <!--<img src="images/Одностраничный-сайт_blue.png" alt="Одностраничный-сайт">-->
-                <picture>
+                <!--<picture>
                     <source media="(max-width: 480px)" srcset="images/Одностраничный-сайт_blue-480w.webp" type="image/webp">
+                    <img src="images/Одностраничный-сайт_blue.png" alt="Одностраничный-сайт">
+                </picture>-->
+                <picture>
+                    <source srcset="images/Одностраничный-сайт_blue-140w.webp 360w, images/Одностраничный-сайт_blue-428w.webp 428w, images/Одностраничный-сайт_blue.webp 1920w" type="image/webp">
                     <img src="images/Одностраничный-сайт_blue.png" alt="Одностраничный-сайт">
                 </picture>
             </div>
@@ -179,10 +183,11 @@
         </div>
     </section>
     <section id="s2" class="section" data-section-name="2" style="background-image: url('images/s2_background.webp')" data-bg="images/s2_background.jpg" data-bg-webp="images/s2_background.webp">
+        <div id="vanta-animation1"></div>
         <div class="container s2__container">
             <div class="s2__wrapper">
                 <h2 class="s2__title section__title wow fadeInLeft">Разработка <span class="s2__span">корпоративного сайта</span></h2>
-                <p class="s2__text wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim, senectus purus mauris amet quis sapien. Dis ac elementum sit nisi, est hendrerit convallis sed erat. Eget fermentum, dui, id hendrerit viverra non sit. Facilisis et curabitur facilisis  Eget fermentum, dui, id hendrerit viverra non sit. Facilisis et curabitur facilisis. Facilisis et curabitur facilisis</p>
+                <p class="s2__text wow fadeInLeft">Наша компания берет заказы на разработку корпоративных сайтов разного типа сложности. Вы сможете выкладывать информацию о компании и ассортименте продукции в два щелчка, а общая картина сайта будет радовать глаз посетителям!</p>
                 <p class="s2__price-crossed-out wow fadeInLeft">450 000 тг</p>
                 <p class="s2__price wow fadeInLeft">350 000 тг</p>
                 <a href="" class="link-btn s2__btn wow fadeInLeft">Купить пакет</a>
@@ -416,7 +421,7 @@
             </picture>
             <div class="s6__wrapper">
                 <h2 class="s6__title section__title wow fadeInRight">Современный <span>дизайн</span></h2>
-                <p class="wow fadeInRight">Будет подобран проверенный дизайн с учётом удобства для пользователей, для увеличения продаж и узнаваемости бренда<br>Будет подобран проверенный дизайн с учётом удобства для пользователей, для увеличения продаж и узнаваемости бренда</p>
+                <p class="wow fadeInRight">Будет подобран проверенный дизайн с учётом удобства для пользователей, для увеличения продаж и узнаваемости бренда</p>
                 <a href="" class="link-btn s6__btn wow fadeInRight">Заказать сайт</a>
             </div>
         </div>
@@ -456,6 +461,10 @@
         <picture>
             <source media="(max-width: 767px)" srcset="images/s8__img.webp" class="s8__img" type="image/webp">
             <img src="images/s8__img.png" alt="s8__img" class="s8__img">
+        </picture>
+        <picture>
+            <source media="(max-width: 767px)" srcset="images/s8__img-mobile.webp" class="s8__img mobile" type="image/webp">
+            <img src="images/s8__img-mobile.png" alt="s8__img-mobile" class="s8__img mobile wow fadeInRight">
         </picture>
     </section>
     <section id="s9" class="section" data-section-name="9">
@@ -569,6 +578,8 @@
 <script src="js/jquery.scrollify.min.js"></script>
 <script src="js/splide.min.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/app.js?ver=1.2.2"></script>
+<script src="js/three.min.js"></script>
+<script src="js/vanta.dots.min.js"></script>
+<script src="js/app.js?ver=1.2.3"></script>
 </body>
 </html>

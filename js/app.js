@@ -205,6 +205,24 @@ document.addEventListener('DOMContentLoaded', function(){
     $('.s3__item').click(function(e){
         e.preventDefault();
     });
+
+    if ( document.getElementById('vanta-animation1') ) {
+        VANTA.DOTS({
+            el: "#vanta-animation1",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xb3b3b3,
+            color2: 0xffffff,
+            backgroundColor: 0xffffff,
+            size: 2.60,
+            spacing: 21.00
+        });
+    }
 });
 
 
