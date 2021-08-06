@@ -2259,6 +2259,9 @@ h1.main-title{
     .s1__container{
         padding-bottom: 82px;
     }
+    .s3__item.grey{
+        text-decoration: line-through;
+    }
     #s4{
         display: flex;
         align-items: center;
@@ -2420,6 +2423,7 @@ h1.main-title{
 .s3__item.grey{
     color: #919191;
     cursor: not-allowed;
+    /*text-decoration: line-through;*/
 }
 .s3__item.grey:hover{
     background-color: var(--white-color);
