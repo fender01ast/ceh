@@ -9,7 +9,7 @@
     <link href="images/webclip.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/style.min.css?v=1.2.6" />
+    <link rel="stylesheet" href="css/style.min.css?v=1.2.7" />
 </head>
 <body>
 <header class="header" data-section-name="header">
@@ -39,7 +39,7 @@
                         <div class="nav-menu__dropdown">
                             <button class="nav-menu__btn">Услуги</button>
                             <div class="nav-menu__dropdown-child">
-                                <a href="index.html" class="blue">Интернет-магазин</a>
+                                <a href="online-store.html" class="blue">Интернет-магазин</a>
                                 <a href="corporate.html" class="blue">Корпоративный сайт</a>
                                 <a href="landing.html" class="blue">Лэндинг</a>
                             </div>
@@ -505,17 +505,7 @@
             <a href="https://maxico.kz/" class="footer__logo mobile">
                 <img src="images/footer__logo-mobile.svg" alt="maxico_footer-logo mobile">
             </a>
-            <div class="footer__left-col-links">
-                <a href="whatsapp://send?phone=77778827766">
-                    <img src="images/footer__wa-img.svg" alt="footer__wa-img">
-                </a>
-                <a href="https://www.instagram.com/it.maxico/">
-                    <img src="images/footer__insta-img.svg" alt="footer__insta-img">
-                </a>
-                <!--<a href="#">
-                    <img src="images/footer__fb-img.svg" alt="footer__fb-img">
-                </a>-->
-            </div>
+            <p class="footer__text">Maxico - это сплоченная команда профессионалов со свежими мыслями в мире IT с научно-техническим потенциалом.<br><br>За семь лет пребывания на рынке инновационных технологии и программного обеспечения мы ввели в практику международные стандарты качества, управление проектами по PMI и Agile.</p>
         </div>
         <div class="footer__middle-col wow fadeInUp">
             <a href="#">
@@ -535,9 +525,25 @@
             </a>
         </div>
         <div class="footer__right-col wow fadeInRight">
+            <h4>Контакты</h4>
+            <a href="https://go.2gis.com/i5jm9" target="_blank">г. Нур-Султан, ул. Сауран, 46</a>
             <a href="tel:+77778877666">+7(777)882-77-66</a>
             <a href="tel:+77172642668">+7(7172)64-26-68</a>
             <a href="mailto:info@maxico.kz">info@maxico.kz</a>
+            <div class="footer__left-col-links">
+                <a href="whatsapp://send?phone=77778827766">
+                    <img src="images/footer__wa-img.svg" alt="footer__wa-img">
+                </a>
+                <a href="https://www.instagram.com/it.maxico/">
+                    <img src="images/footer__insta-img.svg" alt="footer__insta-img">
+                </a>
+                <!--<a href="#">
+                    <img src="images/footer__fb-img.svg" alt="footer__fb-img">
+                </a>-->
+            </div>
+        </div>
+        <div class="footer__map-wrapper wow fadeInRight">
+            <div id="map"></div>
         </div>
     </div>
     <h4 class="footer__signature">
@@ -577,6 +583,11 @@
     .site-pagination ul li a.active:after{
         border: 2px solid var(--blue-color);
     }
+    @media screen and (max-width: 991px) {
+        .nav-menu__btn.current-page:before {
+            background-image: url(images/menu-arrow_blue.svg);
+        }
+    }
     @media screen and (max-width: 767px) {
         .s1__right-col{
             background: none;
@@ -589,6 +600,7 @@
 <script src="js/wow.min.js"></script>
 <script src="js/three.min.js"></script>
 <script src="js/vanta.dots.min.js"></script>
-<script src="js/app.js?ver=1.2.6"></script>
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<script src="js/app.js?ver=1.2.7"></script>
 </body>
 </html>

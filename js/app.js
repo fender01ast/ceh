@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     /* <modal-window> */
     let modalWindow = $('#modal__wrapper');
-    let openModalBtn = $('.link-btn');
+    let openModalBtn = $('.link-btn, .modal-js__btn');
     let closeModalBtn = $('.modal__close-btn, .modal__overlay');
     
     function closeModal() {
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     
 
-    if ( $( window ).width() <= 991 ) {
+    if ( ($( window ).width() <= 991) && (document.querySelector('.splide')) ) {
         /* <slider> */
         new Splide( '.splide', {
             type        : 'loop',
@@ -231,6 +231,22 @@ document.addEventListener('DOMContentLoaded', function(){
             spacing: 21.00
         });
     }
+
+    /* <2gis map init> */
+    if ( document.getElementById('map') ) {
+        setTimeout(function(){
+            var map;
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [51.091198, 71.410682],
+                    zoom: 15
+                });
+
+                DG.marker([51.091198, 71.410682]).addTo(map).bindPopup('Maxico.kz - IT Company');
+            });
+        },3000);
+    }
+    /* </2gis map init> */
 });
 
 
@@ -259,7 +275,7 @@ window.onload = function () {
         }
     }
 
-    if ( $(window).width() > 320 ) {
+    if ( ($(window).width() > 320) && (document.querySelector('.section')) ) {
         /* <one page scroll> */
         $.scrollify({
             section : ".section",
